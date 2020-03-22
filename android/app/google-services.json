@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "712266135214",
+    "firebase_url": "https://blogapp-cec2f.firebaseio.com",
+    "project_id": "blogapp-cec2f",
+    "storage_bucket": "blogapp-cec2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712266135214:android:f971bc61cd7fa2e4541f3f",
+        "android_client_info": {
+          "package_name": "com.example.blog_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712266135214-h7mubpc2jvf24cqdarm5pkekh4gug505.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blog_app",
+            "certificate_hash": "dd447dc0119b870a168ba4aaf43116fe3251df36"
+          }
+        },
+        {
+          "client_id": "712266135214-updr763i679q84mi7fd9qnnfqkcvovrc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCggD8H0Cv9Pj2xK7dlwd-u0ZfpoJLUg1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712266135214-updr763i679q84mi7fd9qnnfqkcvovrc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
