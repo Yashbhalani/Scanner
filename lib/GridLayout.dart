@@ -1,3 +1,5 @@
+import 'package:blog_app/HomePage.dart';
+import 'package:blog_app/PhotoUpload.dart';
 import 'package:flutter/material.dart';
 import 'character_listing_screen.dart';
 class GridLayout extends StatelessWidget {
@@ -7,10 +9,10 @@ class GridLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
-        title: const Text('ScanDigi'),
-        actions: <Widget>[
-          new IconButton(icon: new Icon(Icons.menu), onPressed: null)
-        ],
+        title: const Text('DigiScanner'),
+       // actions: <Widget>[
+         // new IconButton(icon: new Icon(Icons.menu), onPressed: null)
+        //],
       ),
       
       body: Container(
@@ -24,6 +26,114 @@ class GridLayout extends StatelessWidget {
             gridDelegate:
                 SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
             children: events.map((title) {
+
+
+
+
+
+
+
+
+
+               if (title == "Scan") {   
+                 return GestureDetector(
+                    child: Card(
+                    margin: const EdgeInsets.all(20.0),
+                    child: getCardByTitle(title)),
+                    onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>  new UploadPhotoPage()),
+                  
+                   );
+                },
+                  );
+                  
+              }
+
+
+
+              else if (title == "History") {   
+                 return GestureDetector(
+                    child: Card(
+                    margin: const EdgeInsets.all(20.0),
+                    child: getCardByTitle(title)),
+                    onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>  HomePage()),
+                  
+                   );
+                },
+                  );
+                  
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              else if(title == "Team") {   
+                 return GestureDetector(
+                    child: Card(
+                    margin: const EdgeInsets.all(20.0),
+                    child: getCardByTitle(title)),
+                    onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>  CharacterListingScreen()),
+                  
+                   );
+                },
+                  );
+                  
+              }
+
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+              //else if(title == "info") {}
+
               return GestureDetector(
                 child: Card(
                     margin: const EdgeInsets.all(20.0),

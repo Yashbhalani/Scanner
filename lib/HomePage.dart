@@ -140,22 +140,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisSize: MainAxisSize.max,
 
             children: <Widget>[
-              new IconButton(
-                icon: new Icon(Icons.photo_camera), 
-                onPressed: () {
-                  Navigator.push(context, 
-                  MaterialPageRoute(
-                    builder: (context)
-                  {
-                    return new UploadPhotoPage();
-                  }
-                  )
-                  );
-                },
-                iconSize: 50,
-                color: Colors.white,
-              ),
-
+              
               new IconButton(
                 icon: new Icon(Icons.home), 
                 onPressed: () {

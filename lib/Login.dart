@@ -97,10 +97,13 @@ void moveTologin() {
     return new Scaffold(
       
       appBar: new AppBar(
-        title: new Text('NEW'),
+        title: new Text('DigiScanner'),
       ),
 
       body: Container(
+       //  decoration: BoxDecoration(
+         //   image: DecorationImage(
+           //     image: AssetImage("assests/bg2.png"), fit: BoxFit.cover)),
         child:SingleChildScrollView(
           padding: EdgeInsets.all(15.0),
         child: new Form(
@@ -120,11 +123,15 @@ void moveTologin() {
       );
   }
 
+
+
+
+
   List<Widget>createInputs()
   {
     return [
       SizedBox(height: 10.0),
-      Logo(),
+      //Logo(),
       SizedBox(height: 20.0),
 
       new TextFormField(
@@ -164,7 +171,7 @@ SizedBox(height: 10.0),
 
     ];
   }
-
+/*
  Widget Logo()
  {
    
@@ -172,10 +179,11 @@ SizedBox(height: 10.0),
      tag: 'Hero',
     child: new CircleAvatar(
      backgroundColor: Colors.transparent,
-     child: Image.asset('assests/bg.png'),
+     child: Image.asset('assests/small.png',fit:BoxFit.fill,height: 250,width: 300,),
+     
      radius: 10.0,
    ), );
- }
+ } */
 
 
 List<Widget>createButtons()

@@ -8,11 +8,14 @@ void main(){
   }
   
 class BlogApp extends StatelessWidget{
+  
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return new MaterialApp(
-      title: 'Scanner',
+  
+    debugShowCheckedModeBanner: false,
+        title: 'Scanner',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
